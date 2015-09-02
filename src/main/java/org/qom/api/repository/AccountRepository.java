@@ -1,11 +1,11 @@
 package org.qom.api.repository;
 
+import org.qom.api.entities.AccountDto;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.social.facebook.api.Account;
 
 import java.util.Collection;
 
-public interface AccountRepository extends JpaRepository<Account, Long> {
-    Collection<Account> findAllUsersByLogin(String title);
+public interface AccountRepository extends JpaRepository<AccountDto, Long> {
+    Collection<AccountDto> findAllUsersByLogin(String title);
 }
 

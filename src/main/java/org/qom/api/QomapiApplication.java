@@ -1,6 +1,7 @@
 package org.qom.api;
 
-import org.qom.api.entities.*;
+import org.qom.api.entities.AccountDto;
+import org.qom.api.entities.BoxDto;
 import org.qom.api.repository.AccountRepository;
 import org.qom.api.repository.BoxRepository;
 import org.slf4j.Logger;
@@ -9,7 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import java.util.Arrays;
@@ -43,15 +43,9 @@ public class QomapiApplication implements CommandLineRunner {
         Arrays.asList("adam1,adam2,adam3,adam4,adam5".split(",")).forEach((u) -> {
             int i = 0;
 
-            AccountDto acc = new AccountDto(u + "@gmail.com", u, "password", "/mock-data/images" + (++i) + ".jpg");
-            BoxDto box = new BoxDto(u, "Title", "Body", "fgdfg");
-
-            accountRepository.save(acc);
-            boxesRepository.save(box);
+            accountRepository.save(new AccountDto(u + "@gmail.com", u, "password", "/mock-data/images" + (++i) + ".jpg"));
+            boxesRepository.save(new BoxDto(u, "Title", "Body", "fgdfg"));
         });
-
-        //(accountRepository.findAll()).forEach(u -> System.out.println(u.toString()));
-//        (boxesRepository.findAll()).forEach(b -> System.out.println(b.toString()));
 
     }
 }
