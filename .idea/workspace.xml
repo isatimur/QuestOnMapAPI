@@ -2,23 +2,174 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44910cb8-137f-4a07-8e1d-c92127781a25" name="Default" comment="updated project structure">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qom-dao/src/main/java/ru/qom/api/dao/service/AccountDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qom-dao/src/main/java/ru/qom/api/dao/service/BoxDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/qom-rest/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/settings.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MOVED" beforePath="D:\projects\QuestOnMapAPI\services-dao\build.gradle" afterPath="$PROJECT_DIR$/qom-dao/build.gradle" />
-      <change type="MOVED" beforePath="D:\projects\QuestOnMapAPI\services-dao\src\main\java\org\qom\api\dao\domain\Box.java" afterPath="$PROJECT_DIR$/qom-dao/src/main/java/ru/qom/api/dao/domain/Box.java" />
-      <change type="MOVED" beforePath="D:\projects\QuestOnMapAPI\services-dao\src\main\java\org\qom\api\dao\repository\AccountRepository.java" afterPath="$PROJECT_DIR$/qom-dao/src/main/java/ru/qom/api/dao/repository/AccountRepository.java" />
-      <change type="MOVED" beforePath="D:\projects\QuestOnMapAPI\services-dao\src\main\java\org\qom\api\dao\repository\BoxRepository.java" afterPath="$PROJECT_DIR$/qom-dao/src/main/java/ru/qom/api/dao/repository/BoxRepository.java" />
-      <change type="MOVED" beforePath="D:\projects\QuestOnMapAPI\src\main\java\org\qom\api\QomapiApplication.java" afterPath="$PROJECT_DIR$/qom-rest/src/main/java/ru/qom/api/rest/QomapiApplication.java" />
-      <change type="MOVED" beforePath="D:\projects\QuestOnMapAPI\src\main\java\org\qom\api\controllers\BoxController.java" afterPath="$PROJECT_DIR$/qom-rest/src/main/java/ru/qom/api/rest/controller/BoxController.java" />
-      <change type="MOVED" beforePath="D:\projects\QuestOnMapAPI\src\main\java\org\qom\api\dto\AccountTO.java" afterPath="$PROJECT_DIR$/qom-rest/src/main/java/ru/qom/api/rest/dto/AccountTO.java" />
-      <change type="MOVED" beforePath="D:\projects\QuestOnMapAPI\src\main\java\org\qom\api\dto\BoxTO.java" afterPath="$PROJECT_DIR$/qom-rest/src/main/java/ru/qom/api/rest/dto/BoxTO.java" />
-      <change type="MOVED" beforePath="D:\projects\QuestOnMapAPI\src\main\resources\application.properties" afterPath="$PROJECT_DIR$/qom-rest/src/main/resources/application.properties" />
-      <change type="MOVED" beforePath="D:\projects\QuestOnMapAPI\src\main\resources\application.yaml" afterPath="$PROJECT_DIR$/qom-rest/src/main/resources/application.yaml" />
-      <change type="MOVED" beforePath="D:\projects\QuestOnMapAPI\src\main\resources\data.sql" afterPath="$PROJECT_DIR$/qom-rest/src/main/resources/data.sql" />
-      <change type="MOVED" beforePath="D:\projects\QuestOnMapAPI\src\test\java\org\qom\api\QomapiApplicationTests.java" afterPath="$PROJECT_DIR$/src/test/java/ru/qom/api/QomapiApplicationTests.java" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.gradle\1.12\taskArtifacts\cache.properties" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.gradle\1.12\taskArtifacts\cache.properties.lock" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.gradle\1.12\taskArtifacts\fileHashes.bin" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.gradle\1.12\taskArtifacts\fileSnapshots.bin" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.gradle\1.12\taskArtifacts\outputFileStates.bin" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.gradle\1.12\taskArtifacts\taskArtifacts.bin" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\.name" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\copyright\profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\gradle.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__antlr_antlr_2_7_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__aopalliance_aopalliance_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__ch_qos_logback_logback_classic_1_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__ch_qos_logback_logback_core_1_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__com_fasterxml_classmate_1_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__com_fasterxml_jackson_core_jackson_annotations_2_4_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__com_fasterxml_jackson_core_jackson_core_2_4_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__com_fasterxml_jackson_core_jackson_databind_2_4_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__com_github_fge_btf_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__com_github_fge_jackson_coreutils_1_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__com_github_fge_json_patch_1_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__com_github_fge_msg_simple_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__com_google_code_findbugs_jsr305_2_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__com_google_guava_guava_16_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__com_h2database_h2_1_4_187.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__com_ibm_jbatch_com_ibm_jbatch_tck_spi_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__com_thoughtworks_xstream_xstream_1_4_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__dom4j_dom4j_1_6_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__javax_batch_javax_batch_api_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__javax_inject_javax_inject_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__javax_transaction_javax_transaction_api_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__javax_validation_validation_api_1_1_0_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__junit_junit_4_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_apache_tomcat_embed_tomcat_embed_core_8_0_23.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_apache_tomcat_embed_tomcat_embed_el_8_0_23.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_apache_tomcat_embed_tomcat_embed_logging_juli_8_0_23.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_apache_tomcat_embed_tomcat_embed_websocket_8_0_23.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_apache_tomcat_tomcat_jdbc_8_0_23.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_apache_tomcat_tomcat_juli_8_0_23.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_aspectj_aspectjrt_1_8_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_aspectj_aspectjweaver_1_8_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_atteo_evo_inflector_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_codehaus_jettison_jettison_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_hamcrest_hamcrest_library_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_hibernate_common_hibernate_commons_annotations_4_0_5_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_hibernate_hibernate_core_4_3_10_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_hibernate_hibernate_entitymanager_4_3_10_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_hibernate_hibernate_validator_5_1_3_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_hsqldb_hsqldb_2_3_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_javassist_javassist_3_18_1_GA.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_jboss_jandex_1_1_0_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_jboss_logging_jboss_logging_3_1_3_GA.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_jboss_logging_jboss_logging_annotations_1_2_0_Beta1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_mockito_mockito_core_1_10_19.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_objenesis_objenesis_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_postgresql_postgresql_9_4_1201_jdbc41.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_slf4j_jcl_over_slf4j_1_7_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_slf4j_jul_to_slf4j_1_7_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_slf4j_log4j_over_slf4j_1_7_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_slf4j_slf4j_api_1_7_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_batch_spring_batch_core_3_0_4_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_batch_spring_batch_infrastructure_3_0_4_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_boot_spring_boot_1_2_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_boot_spring_boot_actuator_1_2_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_boot_spring_boot_autoconfigure_1_2_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_boot_spring_boot_starter_1_2_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_boot_spring_boot_starter_actuator_1_2_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_boot_spring_boot_starter_aop_1_2_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_boot_spring_boot_starter_batch_1_2_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_boot_spring_boot_starter_data_jpa_1_2_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_boot_spring_boot_starter_data_rest_1_2_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_boot_spring_boot_starter_hateoas_1_2_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_boot_spring_boot_starter_jdbc_1_2_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_boot_spring_boot_starter_logging_1_2_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_boot_spring_boot_starter_social_facebook_1_2_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_boot_spring_boot_starter_social_twitter_1_2_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_boot_spring_boot_starter_test_1_2_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_boot_spring_boot_starter_tomcat_1_2_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_boot_spring_boot_starter_web_1_2_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_data_spring_data_commons_1_9_3_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_data_spring_data_jpa_1_7_3_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_data_spring_data_rest_core_2_2_3_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_data_spring_data_rest_webmvc_2_2_3_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_hateoas_spring_hateoas_0_16_0_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_plugin_spring_plugin_core_1_1_0_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_retry_spring_retry_1_1_0_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_security_spring_security_crypto_3_2_3_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_social_spring_social_config_1_1_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_social_spring_social_core_1_1_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_social_spring_social_facebook_2_0_1_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_social_spring_social_twitter_1_1_0_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_social_spring_social_web_1_1_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_spring_aop_4_1_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_spring_aspects_4_1_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_spring_beans_4_1_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_spring_context_4_1_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_spring_core_4_1_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_spring_expression_4_1_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_spring_jdbc_4_1_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_spring_orm_4_1_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_spring_test_4_1_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_spring_tx_4_1_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_spring_web_4_1_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_springframework_spring_webmvc_4_1_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__org_yaml_snakeyaml_1_14.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__xml_apis_xml_apis_1_0_b2.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__xmlpull_xmlpull_1_1_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\libraries\Gradle__xpp3_xpp3_min_1_1_4c.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\.idea\workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\QuestOnMapAPI.iml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\build\classes\main\ru\qom\api\QomapiApplication.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\build\classes\test\ru\qom\api\QomapiApplicationTests.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\build\reports\tests\classes\css\base-style.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\build\reports\tests\classes\css\style.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\build\reports\tests\classes\htc\css3-pie-1.0beta3.htc" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\build\reports\tests\classes\js\report.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\build\reports\tests\classes\org.qom.api.QomapiApplicationTests.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\build\reports\tests\css\base-style.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\build\reports\tests\css\style.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\build\reports\tests\htc\css3-pie-1.0beta3.htc" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\build\reports\tests\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\build\reports\tests\js\report.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\build\reports\tests\packages\css\base-style.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\build\reports\tests\packages\css\style.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\build\reports\tests\packages\htc\css3-pie-1.0beta3.htc" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\build\reports\tests\packages\js\report.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\build\reports\tests\packages\org.qom.api.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\build\resources\main\application.properties" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\build\resources\main\application.yaml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\build\resources\main\data.sql" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\build\test-results\TEST-org.qom.api.QomapiApplicationTests.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\build\test-results\binary\test\output.bin" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\build\test-results\binary\test\output.bin.idx" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\build\test-results\binary\test\results.bin" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\out\production\services-dao\ru\qom\api\dao\domain\AbstractEntityId.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\out\production\services-dao\ru\qom\api\dao\domain\Account.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\out\production\services-dao\ru\qom\api\dao\domain\Box.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\out\production\services-dao\ru\qom\api\dao\repository\AccountRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\out\production\services-dao\ru\qom\api\dao\repository\BoxRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\out\production\services-dao\ru\qom\api\dao\service\AccountDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\out\production\services-dao\ru\qom\api\dao\service\BoxDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\qom-dao\build\classes\main\ru\qom\api\dao\domain\AbstractEntityId.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\qom-dao\build\classes\main\ru\qom\api\dao\domain\Account.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\qom-dao\build\classes\main\ru\qom\api\dao\domain\Box.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\qom-dao\build\classes\main\ru\qom\api\dao\repository\AccountRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\qom-dao\build\classes\main\ru\qom\api\dao\repository\BoxRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\qom-dao\build\classes\main\ru\qom\api\dao\service\AccountDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\qom-dao\build\classes\main\ru\qom\api\dao\service\BoxDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\qom-dao\qom-dao.iml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\qom-rest\build\classes\main\ru\qom\api\rest\QomapiApplication.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\qom-rest\build\classes\main\ru\qom\api\rest\controller\AccountController.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\qom-rest\build\classes\main\ru\qom\api\rest\controller\BoxController.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\qom-rest\build\classes\main\ru\qom\api\rest\dto\AccountTO.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\qom-rest\build\classes\main\ru\qom\api\rest\dto\BoxTO.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\qom-rest\build\resources\main\application.properties" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\qom-rest\build\resources\main\application.yaml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\qom-rest\build\resources\main\data.sql" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\qom-rest\qom-rest.iml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\quest-on-map.iml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projects\QuestOnMapAPI\services-dao\services-dao.iml" afterPath="" />
+      <change type="MOVED" beforePath="D:\projects\QuestOnMapAPI\qom-rest\src\main\java\ru\qom\api\rest\QomapiApplication.java" afterPath="$PROJECT_DIR$/qom-rest/src/main/java/ru/qom/api/QomapiApplication.java" />
+      <change type="MOVED" beforePath="D:\projects\QuestOnMapAPI\src\test\java\ru\qom\api\QomapiApplicationTests.java" afterPath="$PROJECT_DIR$/qom-rest/src/test/java/ru/qom/api/QomapiApplicationTests.java" />
     </list>
     <ignored path="QuestOnMapAPI.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,20 +226,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="QomapiApplication.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/qom-rest/src/main/java/ru/qom/api/rest/QomapiApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.31070495">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.08877285">
               <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
               <folding />
             </state>
@@ -141,20 +282,6 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AccountController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/qom-rest/src/main/java/ru/qom/api/rest/controller/AccountController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#478#479#0" expanded="true" />
-                <element signature="e#545#546#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -1015,6 +1142,7 @@
         <option value="$PROJECT_DIR$/settings.gradle" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/qom-rest/src/main/java/ru/qom/api/rest/QomapiApplication.java" />
+        <option value="$PROJECT_DIR$/qom-rest/src/main/java/ru/qom/api/QomapiApplication.java" />
       </list>
     </option>
   </component>
@@ -1118,6 +1246,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QuestOnMapAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QuestOnMapAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qom-rest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1152,7 +1310,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="rest" />
+              <option name="myItemId" value="api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1179,6 +1337,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1216,6 +1378,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="rest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1238,24 +1404,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QuestOnMapAPI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QuestOnMapAPI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qom-dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -1273,13 +1421,34 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="51" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="51" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="51" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="452" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="51" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="50" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="51" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="453" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\projects\QuestOnMapAPI\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projects\QuestOnMapAPI\qom-rest\src" />
+      <recent name="D:\projects\QuestOnMapAPI\qom-rest\src\main" />
       <recent name="D:\projects\QuestOnMapAPI\qom-rest\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ru.qom.api" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.QomapiApplication">
@@ -1310,7 +1479,7 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="ru.qom.api.rest.QomapiApplication" />
+      <option name="MAIN_CLASS_NAME" value="ru.qom.api.QomapiApplication" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -1602,7 +1771,7 @@
     </configuration>
     <configuration default="false" name="QomapiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.qom.api.rest.QomapiApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.qom.api.QomapiApplication" />
       <module name="qom-rest" />
       <envs />
       <method />
@@ -1637,7 +1806,7 @@
       <workItem from="1441268487591" duration="71000" />
       <workItem from="1441269098090" duration="1973000" />
       <workItem from="1441391022361" duration="11980000" />
-      <workItem from="1441406188225" duration="223000" />
+      <workItem from="1441406188225" duration="743000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1441235409735</created>
@@ -1673,7 +1842,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19819000" />
+    <option name="totallyTimeSpent" value="20339000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1748,7 +1917,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qom-rest/src/main/java/ru/qom/api/rest/QomapiApplication.java">
+    <entry file="file://$PROJECT_DIR$/qom-rest/src/main/java/ru/qom/api/QomapiApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="41" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
@@ -1822,7 +1991,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qom-rest/src/main/java/ru/qom/api/rest/QomapiApplication.java">
+    <entry file="file://$PROJECT_DIR$/qom-rest/src/main/java/ru/qom/api/QomapiApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="41" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
@@ -1896,7 +2065,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qom-rest/src/main/java/ru/qom/api/rest/QomapiApplication.java">
+    <entry file="file://$PROJECT_DIR$/qom-rest/src/main/java/ru/qom/api/QomapiApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="41" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
@@ -1970,7 +2139,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qom-rest/src/main/java/ru/qom/api/rest/QomapiApplication.java">
+    <entry file="file://$PROJECT_DIR$/qom-rest/src/main/java/ru/qom/api/QomapiApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1978,18 +2147,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qom-rest/src/main/java/ru/qom/api/rest/QomapiApplication.java">
+    <entry file="file://$PROJECT_DIR$/qom-rest/src/main/java/ru/qom/api/QomapiApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="176" column="26" selection-start-line="176" selection-start-column="26" selection-end-line="176" selection-end-column="26" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/qom/api/QomapiApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53263706">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -2127,14 +2289,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/qom-rest/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2143,10 +2297,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qom-rest/src/main/java/ru/qom/api/rest/QomapiApplication.java">
+    <entry file="file://$PROJECT_DIR$/qom-rest/src/test/java/ru/qom/api/QomapiApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31070495">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.48825064">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qom-rest/src/main/java/ru/qom/api/QomapiApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22193211">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08877285">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
           <folding />
         </state>
       </provider>
