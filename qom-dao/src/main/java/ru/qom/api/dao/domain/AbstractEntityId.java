@@ -1,4 +1,4 @@
-package org.qom.api.dao.domain;
+package ru.qom.api.dao.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -37,9 +37,6 @@ public class AbstractEntityId {
             return false;
         }
         final AbstractEntityId other = (AbstractEntityId) obj;
-        if (!Objects.equals(this.id, other.id)) {
-            return false;
-        }
-        return true;
+        return Objects.equals(this.id, other.id);
     }
 }
