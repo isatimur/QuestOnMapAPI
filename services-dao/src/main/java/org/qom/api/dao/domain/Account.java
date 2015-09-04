@@ -1,11 +1,21 @@
-package org.qom.api.entities;
+package org.qom.api.dao.domain;
 
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
-public class AccountDto extends AbstractEntityIdDto {
+public class Account extends AbstractEntityId {
 
-    public AccountDto() {
+    @OneToMany(mappedBy = "account")
+    Set<Box> boxes = new HashSet<Box>();
+
+    public Set<Box> getBoxes() {
+        return boxes;
+    }
+
+    public Account() {
     }
 
     private String login;
@@ -32,7 +42,7 @@ public class AccountDto extends AbstractEntityIdDto {
         return avatar;
     }
 
-    public AccountDto(String login, String username, String password, String avatar) {
+    public Account(String login, String username, String password, String avatar) {
         this.login = login;
         this.username = username;
         this.password = password;

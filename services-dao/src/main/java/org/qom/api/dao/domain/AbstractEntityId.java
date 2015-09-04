@@ -1,4 +1,4 @@
-package org.qom.api.entities;
+package org.qom.api.dao.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import java.util.Objects;
 
 @Entity
-public class AbstractEntityIdDto {
+public class AbstractEntityId {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -36,7 +36,7 @@ public class AbstractEntityIdDto {
         if (getClass() != obj.getClass()) {
             return false;
         }
-        final AbstractEntityIdDto other = (AbstractEntityIdDto) obj;
+        final AbstractEntityId other = (AbstractEntityId) obj;
         if (!Objects.equals(this.id, other.id)) {
             return false;
         }

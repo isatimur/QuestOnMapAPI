@@ -1,11 +1,23 @@
-package org.qom.api.entities;
+package org.qom.api.dao.domain;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 
 @Entity
-public class BoxDto extends AbstractEntityIdDto {
+public class Box extends AbstractEntityId {
 
-    public BoxDto() {
+    public Box() {
+    }
+
+    @ManyToOne
+    private Account account;
+
+    public Account getAccount() {
+        return account;
+    }
+
+    public String getBoxtype() {
+        return boxtype;
     }
 
     private String username;
@@ -32,7 +44,7 @@ public class BoxDto extends AbstractEntityIdDto {
         return boxtype;
     }
 
-    public BoxDto(String username, String title, String body, String boxtype) {
+    public Box(String username, String title, String body, String boxtype) {
         this.username = username;
         this.title = title;
         this.body = body;
