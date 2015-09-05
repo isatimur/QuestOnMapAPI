@@ -7,15 +7,15 @@ public class AccountTO {
     private String login;
     private String username;
     private String password;
-    private String avatar;
+    private String avaUrl;
 
     public AccountTO() {
     }
 
-    public AccountTO(String login, String username, String password, String avatar) {
+    public AccountTO(String login, String username, String password, String avaUrl) {
         this.login = login;
         this.username = username;
         this.password = password;
-        this.avatar = avatar;
+        this.avaUrl = avaUrl;
     }
 }
