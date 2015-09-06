@@ -5,3 +5,7 @@ environments:
     prod:
         url: http://foo.bar.com
         name: My Cool App
+spring:
+    jpa:
+        hibernate:
+            ddl-auto: apdate

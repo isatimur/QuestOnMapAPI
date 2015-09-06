@@ -17,14 +17,18 @@ public abstract class Details {
     @Id
     @GeneratedValue
     protected Long id;
+
     @ManyToOne(optional = false)
     @JoinColumn
     protected Account account;
+
     @Enumerated(EnumType.STRING)
     @Column(name = "DATA_TYPE")
     protected DataType type;
+
     @Column(name = "VALUE")
     protected String value;
+
     @Column(name = "NAME")
     protected String name;
 

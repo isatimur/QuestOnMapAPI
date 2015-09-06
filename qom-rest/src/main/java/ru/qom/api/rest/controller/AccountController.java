@@ -19,8 +19,14 @@ public class AccountController {
     AccountDAO accountDAO;
 
     @RequestMapping(value = "/{username}",method = RequestMethod.GET)
-    public ResponseEntity findUsers(@PathVariable(value = "username")String username) {
+    public ResponseEntity findByUsername(@PathVariable(value = "username")String username) {
         LOGGER.info(username);
         return ResponseEntity.ok(accountDAO.findByUsername(username));
+    }
+
+
+    @RequestMapping(method = RequestMethod.GET)
+    public ResponseEntity findUsers() {
+        return ResponseEntity.ok(accountDAO.findAll());
     }
 }

@@ -1,5 +1,6 @@
 package ru.qom.api.dao.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import ru.qom.api.dao.domain.enums.Gender;
 
 import javax.persistence.*;
@@ -8,12 +9,22 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-public class Account extends AbstractEntityId {
+public class Account {
 
-    @OneToMany( cascade = {CascadeType.ALL},
-            mappedBy = "account",
-            orphanRemoval = true)
-    private Set<Box> boxes = new HashSet<Box>();
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    @OneToMany(mappedBy = "account")
+    private Set<Box> boxes = new HashSet<>();
 
     @Column(unique = true)
     private String login;
@@ -21,10 +32,11 @@ public class Account extends AbstractEntityId {
     @Column(unique = true)
     private String username;
 
+    @JsonIgnore
     @Column(nullable = false)
     private String password;
 
-    @Column(name = "avaUrl")
+    @Column(name = "AVA_URL")
     private String avaUrl;
 
     @Column(name = "CREATED_TS")
