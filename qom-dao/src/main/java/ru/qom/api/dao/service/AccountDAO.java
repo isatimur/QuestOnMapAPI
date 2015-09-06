@@ -23,6 +23,14 @@ public class AccountDAO {
         return accountRepository.findByUsername(username);
     }
 
+    public Account saveAccount(Account account){
+        return accountRepository.save(account);
+    }
+    public void deleteAccount(Long id){
+        accountRepository.delete(id);
+    }
+
+
     //public Map<AccountDetails>
 
 

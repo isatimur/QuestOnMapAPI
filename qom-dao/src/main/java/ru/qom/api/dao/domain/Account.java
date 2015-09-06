@@ -8,7 +8,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Table(name = "ACCOUNT")
 public class Account extends AbstractEntityId {
 
     @OneToMany( cascade = {CascadeType.ALL},

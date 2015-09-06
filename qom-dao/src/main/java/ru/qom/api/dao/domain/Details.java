@@ -1,11 +1,12 @@
 package ru.qom.api.dao.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.google.common.collect.Maps;
 import ru.qom.api.dao.domain.enums.DataType;
 
 import javax.persistence.*;
 import java.util.Map;
+
+import static com.google.common.collect.Maps.immutableEntry;
 
 /**
  * Created by Тимакс on 05.09.2015.
@@ -100,6 +101,6 @@ public abstract class Details {
     }
 
     public Map.Entry<String, String> getAsKeyValue() {
-        return Maps.immutableEntry(name, value);
+        return immutableEntry(name, value);
     }
 }

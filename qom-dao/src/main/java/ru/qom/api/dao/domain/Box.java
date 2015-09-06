@@ -1,5 +1,6 @@
 package ru.qom.api.dao.domain;
 
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.Entity;
@@ -54,19 +55,4 @@ public class Box extends AbstractEntityId {
         this.account = account;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public void setBody(String body) {
-        this.body = body;
-    }
-
-    public void setBoxtype(String boxtype) {
-        this.boxtype = boxtype;
-    }
 }
