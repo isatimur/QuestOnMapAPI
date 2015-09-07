@@ -1,7 +1,7 @@
 allprojects {
     group = 'ru.qom'
 
-     apply plugin: 'eclipse'
+    apply plugin: 'eclipse'
     apply plugin: 'idea'
     apply plugin: 'java'
 

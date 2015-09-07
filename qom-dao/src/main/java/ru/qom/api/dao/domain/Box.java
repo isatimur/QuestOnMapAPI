@@ -12,18 +12,8 @@ public class Box {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
     @ManyToOne
     private Account account;
-
     private String username;
     private String title;
     private String body;
@@ -39,8 +29,20 @@ public class Box {
         this.boxtype = boxtype;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public Account getAccount() {
         return account;
+    }
+
+    public void setAccount(Account account) {
+        this.account = account;
     }
 
     public String getBoxtype() {
@@ -61,10 +63,6 @@ public class Box {
 
     public String getBoxType() {
         return boxtype;
-    }
-
-    public void setAccount(Account account) {
-        this.account = account;
     }
 
 }

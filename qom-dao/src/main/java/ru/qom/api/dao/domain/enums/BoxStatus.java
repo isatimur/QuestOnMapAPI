@@ -6,6 +6,8 @@ package ru.qom.api.dao.domain.enums;
 public enum BoxStatus {
     NOT_ACCESSIBLE(0), VISIBLE(1), READY_TO_OPEN(2), OPENED(3);
 
+    private final int idStatus;
+
     BoxStatus(int idStatus) {
 
         this.idStatus = idStatus;
@@ -14,6 +16,4 @@ public enum BoxStatus {
     public int getIdStatus() {
         return idStatus;
     }
-
-    private final int idStatus;
 }

@@ -3,6 +3,8 @@ package ru.qom.api.dao.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import ru.qom.api.dao.domain.Account;
+import ru.qom.api.dao.domain.AccountDetails;
+import ru.qom.api.dao.repository.AccountDetailsRepository;
 import ru.qom.api.dao.repository.AccountRepository;
 
 import java.util.Collection;
@@ -15,6 +17,8 @@ import java.util.Optional;
 public class AccountDAO {
     @Autowired
     private AccountRepository accountRepository;
+    @Autowired
+    private AccountDetailsRepository accountDetailsRepository;
 
     public Account getAccount(Long id) {
         return accountRepository.findOne(id);
@@ -40,8 +44,14 @@ public class AccountDAO {
         return (Collection<Account>) accountRepository.findAll();
     }
 
+    public Collection<AccountDetails> getAccountInfos(Long accountId) {
+        return accountDetailsRepository.getAccountInfos(accountId);
+    }
 
-    //public Map<AccountDetails>
+
+    public Optional<AccountDetails> getAccountInfo(Long accountId, String name) {
+        return accountDetailsRepository.getAccountInfo(accountId, name);
+    }
 
 
 }

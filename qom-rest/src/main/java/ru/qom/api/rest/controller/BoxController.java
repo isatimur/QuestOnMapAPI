@@ -8,13 +8,14 @@ import org.springframework.web.bind.annotation.RestController;
 import ru.qom.api.dao.service.BoxDAO;
 
 @RestController
+@RequestMapping("/boxes")
 public class BoxController {
 
     @Autowired
     BoxDAO boxDAO;
 
-    @RequestMapping("/boxes/{username}")
+    @RequestMapping("/{username}")
     public ResponseEntity findBoxes(@PathVariable String username) {
-        return ResponseEntity.ok().build();
+        return ResponseEntity.ok(boxDAO.findByAccountUsername(username));
     }
 }

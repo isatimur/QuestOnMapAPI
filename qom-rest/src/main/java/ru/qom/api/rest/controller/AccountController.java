@@ -18,10 +18,19 @@ public class AccountController {
     @Autowired
     AccountDAO accountDAO;
 
-    @RequestMapping(value = "/{username}",method = RequestMethod.GET)
-    public ResponseEntity findByUsername(@PathVariable(value = "username")String username) {
-        LOGGER.info(username);
+    @RequestMapping(value = "/{username}")
+    public ResponseEntity findByUsername(@PathVariable String username) {
         return ResponseEntity.ok(accountDAO.findByUsername(username));
+    }
+
+    @RequestMapping(value = "/{accountId}/info")
+    public ResponseEntity findUserInfoByUsername(@PathVariable Long accountId) {
+        return ResponseEntity.ok(accountDAO.getAccountInfos(accountId));
+    }
+
+    @RequestMapping(value = "/{accountId}/info/{name}")
+    public ResponseEntity findUserInfoByUsername(@PathVariable Long accountId, @PathVariable String name) {
+        return ResponseEntity.ok(accountDAO.getAccountInfo(accountId, name));
     }
 
 

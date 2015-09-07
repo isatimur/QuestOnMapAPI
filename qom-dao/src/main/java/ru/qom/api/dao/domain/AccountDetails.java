@@ -10,4 +10,5 @@ import javax.persistence.Table;
 @Table(name = "ACCOUNT_DETAILS")
 public class AccountDetails extends Details {
 
+
 }

@@ -18,8 +18,7 @@ public abstract class Details {
     @GeneratedValue
     protected Long id;
 
-    @ManyToOne(optional = false)
-    @JoinColumn
+    @ManyToOne
     protected Account account;
 
     @Enumerated(EnumType.STRING)
@@ -76,19 +75,6 @@ public abstract class Details {
         this.name = name;
     }
 
-    public void setValueAsObject(Object object) {
-        if (object instanceof Number) {
-            setType(DataType.NUMBER);
-            setValue(Integer.toString(((Integer) object).intValue()));
-        } else if (object instanceof Boolean) {
-            setType(DataType.BOOL);
-            setValue(Boolean.toString(((Boolean) object).booleanValue()));
-        } else {
-            setType(DataType.STRING);
-            setValue((String) object);
-        }
-    }
-
     public Object getValueAsObject() {
         Object object;
         if (value == null) {
@@ -102,6 +88,19 @@ public abstract class Details {
             object = value;
         }
         return object;
+    }
+
+    public void setValueAsObject(Object object) {
+        if (object instanceof Number) {
+            setType(DataType.NUMBER);
+            setValue(Integer.toString(((Integer) object).intValue()));
+        } else if (object instanceof Boolean) {
+            setType(DataType.BOOL);
+            setValue(Boolean.toString(((Boolean) object).booleanValue()));
+        } else {
+            setType(DataType.STRING);
+            setValue((String) object);
+        }
     }
 
     public Map.Entry<String, String> getAsKeyValue() {
