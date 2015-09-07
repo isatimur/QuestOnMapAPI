@@ -1,5 +1,6 @@
 rootProject.name = 'quest-on-map'
 include 'qom-rest'
-include 'qom-dao'
-include 'qom-conf'
+//include 'qom-dao'
+
+
 
