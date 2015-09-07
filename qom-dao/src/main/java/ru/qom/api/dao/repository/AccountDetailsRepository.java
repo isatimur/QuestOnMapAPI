@@ -9,7 +9,7 @@ import java.util.Collection;
 import java.util.Optional;
 
 /**
- * Created by Тимакс on 06.09.2015.
+ * Created by isa on 06.09.2015.
  */
 public interface AccountDetailsRepository extends PagingAndSortingRepository<AccountDetails, Long> {
     @Query("select d from AccountDetails d where d.id = :accountId")

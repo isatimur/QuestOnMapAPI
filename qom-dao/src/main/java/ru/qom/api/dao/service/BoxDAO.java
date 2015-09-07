@@ -8,7 +8,7 @@ import ru.qom.api.dao.repository.BoxRepository;
 import java.util.Collection;
 
 /**
- * Created by Тимакс on 05.09.2015.
+ * Created by isa on 05.09.2015.
  */
 @Service("boxDAO")
 public class BoxDAO {

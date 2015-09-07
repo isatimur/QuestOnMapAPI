@@ -17,10 +17,17 @@ apply plugin: 'idea'
 apply plugin: 'spring-boot'
 apply plugin: 'io.spring.dependency-management'
 
+bootRepackage {
+    enabled = false
+}
+
+mainClassName = 'com.foo.Bar'
+
 jar {
     baseName = 'qom-dao'
     version = '0.0.1-SNAPSHOT'
 }
+
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 

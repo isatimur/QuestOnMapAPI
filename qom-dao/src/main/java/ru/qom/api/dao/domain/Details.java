@@ -9,7 +9,7 @@ import java.util.Map;
 import static com.google.common.collect.Maps.immutableEntry;
 
 /**
- * Created by Тимакс on 05.09.2015.
+ * Created by isa on 05.09.2015.
  */
 @JsonIgnoreProperties(value = "account")
 @MappedSuperclass

@@ -1,7 +1,7 @@
 package ru.qom.api.rest.dto;
 
 /**
- * Created by Тимакс on 05.09.2015.
+ * Created by isa on 05.09.2015.
  */
 public class BoxTO {
     private String username;
