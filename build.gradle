@@ -1,14 +1,5 @@
 allprojects {
     group = 'ru.qom.api'
     version = '1.0'
-
-    apply plugin: 'java'
-
-    dependencies {
-        compile("com.fasterxml.jackson.core:jackson-annotations:2.4.6")
-        compile("com.fasterxml.jackson.core:jackson-core:2.4.6")
-        compile("com.fasterxml.jackson.core:jackson-databind:2.4.6")
-        compile("com.google.guava:guava:16.0.1")
-    }
 }
 
