@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="365d8fc5-3684-4e4a-beb8-f16f0b6377ff" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/cache.properties.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/fileHashes.bin" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="quest-on-map.iws" />
@@ -1288,7 +1286,7 @@
       <option name="number" value="Default" />
       <updated>1441697202778</updated>
       <workItem from="1441697210501" duration="3069000" />
-      <workItem from="1441701266469" duration="2879000" />
+      <workItem from="1441701266469" duration="3036000" />
     </task>
     <task id="LOCAL-00001" summary="reverted&#10;">
       <created>1441703496199</created>
@@ -1296,11 +1294,17 @@
       <option name="project" value="LOCAL" />
       <updated>1441703496199</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="reverted&#10;">
+      <created>1441704167771</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1441704167771</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5948000" />
+    <option name="totallyTimeSpent" value="6105000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="18" width="1551" height="882" extended-state="6" />
