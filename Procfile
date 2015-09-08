@@ -1,0 +1,1 @@
+web: java -Dserver.port=$PORT -jar qom-rest/build/libs/quest-rest-0.0.1-SNAPSHOR.jar

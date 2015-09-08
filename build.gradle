@@ -1,5 +1,1 @@
-allprojects {
-    group = 'ru.qom.api'
-    version = '1.0'
-}
-
+task stage(dependsOn: ['clean', 'build', 'installApp'])
