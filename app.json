@@ -1,0 +1,16 @@
+{
+  "name":"QuestOnMapAPI",
+  "description":"This is a backend API for Quest On Map application",
+  "scripts":{},
+  "env":{
+    "GRADLE_TASK":{
+      "required":true
+    },
+    "JAVA_OPTS":{
+      "required":true
+    }
+  },
+  "addons":[
+    "heroku-postgresql"
+  ]
+}
